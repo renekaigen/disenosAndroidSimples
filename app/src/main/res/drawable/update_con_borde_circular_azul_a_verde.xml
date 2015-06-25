@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:state_pressed="true">
+        <layer-list>
+            <item>
+                <bitmap android:gravity="fill"
+                    android:src="@drawable/update"
+                    android:tileMode="disabled" />
+            </item>
+            <item>
+                <shape
+                   android:shape="rectangle">
+                    <solid android:color="#9d3b404f" />
+                    <padding
+                        android:bottom="3dp"
+                        android:left="3dp"
+                        android:right="3dp"
+                        android:top="3dp" />
+                    <corners android:radius="22dp" />
+                    <stroke
+                        android:width="3dp"
+                        android:color="#F22E9B36" />
+                    <!-- F22E9B36
+                     #ff93ff5d-->
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+
+    <item android:state_enabled="true">
+        <layer-list>
+            <!-- la imagen -->
+            <item>
+                <bitmap android:gravity="fill"
+                    android:src="@drawable/update"
+                    android:tileMode="disabled" />
+            </item>
+
+            <!-- la forma y colores -->
+            <item>
+                <shape
+                    android:shape="rectangle">
+                    <solid android:color="#00ffffff" />
+                    <padding
+                        android:bottom="3dp"
+                        android:left="3dp"
+                        android:right="3dp"
+                        android:top="3dp" />
+                    <corners android:radius="22dp" />
+                    <stroke
+                        android:width="3dp"
+                        android:color="#ff0a44ff" />
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+
+
+</selector>
